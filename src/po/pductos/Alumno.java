@@ -3,19 +3,21 @@ package po.pductos;
 import java.util.Arrays;
 
 public class Alumno extends Persona {
+
+    //ATRIBUTOS
     private String matricula;
     private String gene;
     private Materia[] materias=new Materia[6];
     private Horario horario;
 
-
+//MÉTODOS
     public Alumno(String nombre, String fechaNac,char genero, String matricula, String gene) {
         super(nombre, fechaNac, genero);
         this.matricula=matricula;
         this.gene=gene;
         //this.new Materias[6];
     }
-                          //HORARIO
+                          //SETTERS
 public void setHorario(Horario h){
         this.horario=h;
 
@@ -24,6 +26,8 @@ public void setHorario(Horario h){
     public void setMaterias(Materia materias[]){
         this.materias=materias;
     }
+
+    //GETTERS
     public Horario getHorario(){
       return  this.horario;
 

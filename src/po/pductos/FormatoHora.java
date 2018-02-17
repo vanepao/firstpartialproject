@@ -1,10 +1,12 @@
 package po.pductos;
 
 public class FormatoHora {
+    //ATRIBUTOS
     private int horas;
     private int minutos;
     private int segundos;
 
+    //MÉTODOS
     public FormatoHora(int horas, int minutos, int segundos){
         this.horas=horas;
         this.minutos=minutos;

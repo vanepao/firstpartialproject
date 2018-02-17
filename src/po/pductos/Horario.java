@@ -3,13 +3,14 @@ package po.pductos;
 import java.text.Format;
 
 public class Horario {
+    //ATRIBUTOS
     private FormatoHora inicio;
     private FormatoHora fin;
     private String aula;
     private Horario horario;
     private FormatoHora duracion;
 
-
+//MÉTODOS
     public Horario(FormatoHora inicio, FormatoHora fin, String aula){
         this.inicio=inicio;
         this.fin=fin;
@@ -19,9 +20,12 @@ public class Horario {
         this.inicio=inicio;
         this.fin=fin;
     }
+
+    //SETTER
     public void setAula(String aula){
         this.aula=aula;
     }
+    //GETTERS
     public FormatoHora getIncio() {
         return inicio;
     }
@@ -33,6 +37,8 @@ public class Horario {
     public String getAula() {
         return aula;
     }
+
+    //MÉTODO
     public FormatoHora CalculaDuracion(){
         int HI = inicio.getHoras();
         int MI= inicio.getMinutos();
@@ -64,7 +70,7 @@ public class Horario {
             return new FormatoHora(HF-HI, MF-MI, SF-SI);
         }
 
-
+//String devuelve datos de clase horario
 
     @Override
     public String toString(){
